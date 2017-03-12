@@ -4,16 +4,13 @@
   "description": "Font loading based on FOUT with a class",
   "main": "lib/index.js",
   "scripts": {
-    "compile": "babel -d lib/ src/",
-    "prepublish": "yarn compile",
+    "compile": "babel --presets es2015 -d lib/ src/",
+    "prepublish": "yarn compile"
   },
   "files": ["lib/", "README.md"],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-es2015": "^6.22.0",
-    "babel-preset-stage-1": "^6.22.0"
+    "babel-preset-es2015": "^6.22.0"
   }
 }
