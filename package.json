@@ -1,6 +1,6 @@
 {
   "name": "postcss-fout-with-a-class",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Font loading based on FOUT with a class",
   "main": "lib/index.js",
   "scripts": {

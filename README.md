@@ -88,9 +88,9 @@ away once your service worker is active:
 <body>
   <script>
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller !== null && navigator.serviceWorker.controller.state === 'activated') {
-    document.body.classList.add('wf-loaded');
+    document.querySelector("html").classList.add('wf-loaded');
   } else {
-    document.addEventListener('load', function() { document.body.classList.add('wf-loaded'); }, false);
+    document.addEventListener('load', function() { document.querySelector("html").classList.add('wf-loaded'); }, false);
   }
   </script>
 
